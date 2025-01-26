@@ -76,7 +76,7 @@ const Course = () => {
         </div>
         <div className="lesson-card-btn">
           <button onClick={toggleQuickReads} className="text-link">
-            {showAll ? `Show ${quickReads.length} Less` : `Show ${quickReads.length} More`}
+            {showAll ? `Show ${quickReads.length - 4} Less` : `Show ${quickReads.length - 4} More`}
           </button>
         </div>
       </section>
@@ -86,7 +86,7 @@ const Course = () => {
       <section>
         <div className="topic-picker">
           {exploreTopics.map((topic, index) => (
-            <a key={index} href="#">
+            <a key={index} href="">
               <span className="topic_name">{topic.name}</span>
               <div className="topic-picker__viewers">
                 <span aria-hidden="true" className="viewers-count">

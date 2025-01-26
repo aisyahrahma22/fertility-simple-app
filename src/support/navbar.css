@@ -44,6 +44,10 @@
     transform: translateY(-5px); 
   }
 
+  .course-mobile-only{
+    display: none;
+  }
+
   @media (max-width: 959px) {
       
     .main-nav__section{
@@ -55,8 +59,16 @@
       display: none;
     }
 
-    .main-nav__link__image_search{
-      display: none;
+    .course-mobile-only{
+      display: block;
+      cursor: pointer;
+      transition: transform 0.25s ease;
+      font-family: ABC Whyte, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.2;
+      margin-top: 5px;
     }
   
   }
@@ -72,10 +84,17 @@
     .main-nav__link {
       display: none;
     }
-
-    .main-nav__link__image_search{
-      display: none;
-    }
   
+    .course-mobile-only{ 
+      display: block;
+      cursor: pointer;
+      transition: transform 0.25s ease;
+      font-family: ABC Whyte, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.2;
+      margin-top: 5px;
+    }
   }
   

@@ -16,6 +16,13 @@ const Navbar = () => {
         <div className='main-nav__link'>Find a Doctor</div>
         <div className='main-nav__link'>For Employers</div>
         <div className='main-nav__link'>Sign In</div>
+        <div className='course-mobile-only'>
+        <Link
+            href={`/courses`}
+            >
+          Courses
+        </Link>
+      </div>
         <div className="main-nav__link__image_search">
             <Link
               href={`/search`}

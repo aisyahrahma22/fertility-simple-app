@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { Expert } from "@/app/types";
 
 interface ExpertCarouselProps {
@@ -31,13 +30,11 @@ interface ExpertCarouselProps {
       {'"'}{experts[currentIndex].notes}{'"'}
       </blockquote>
       <div className="quote">
-        <Image
-          src={experts[currentIndex].image}
-          alt={experts[currentIndex].name}
-          width={80}
-          height={80}
-          className="rounded-full border-2 border-gray-300"
-        />
+         <img
+            src={experts[currentIndex].image}
+            alt={experts[currentIndex].name}
+            className="quote-image"
+          />
         <div>
           <h4 className="text-lg font-semibold text-gray-800">
             {experts[currentIndex].name}

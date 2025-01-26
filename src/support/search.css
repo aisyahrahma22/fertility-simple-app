@@ -39,6 +39,7 @@
     display: flex;
     justify-content: space-between;
   }
+  
 
   .input-with-label{
     border: none;
@@ -133,6 +134,19 @@
   
     .content-search-header {
       width: 100%;
+    }
+
+    .input-with-label{
+      font-size:12px;
+    }
+
+    .content-search-header2 {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  
+    .content-search__title {
+      font-size: 24px;
     }
   }
   

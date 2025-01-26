@@ -167,7 +167,7 @@ const coursesData = [
       description: "Comprehensive data on natural conception and fertility diagnosis",
       category: "Introduction",
       feat: "Featuring experts from Cornell, Johns Hopkins, +3 more.",
-      price: 1000000,
+      price: 100000,
       views: 8000,
       duration: "4 lessons, 50m",
       experts: [

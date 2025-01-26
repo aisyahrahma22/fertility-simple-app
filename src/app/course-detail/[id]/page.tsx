@@ -76,13 +76,15 @@ const CourseDetailPage = () => {
             )
           )}
         </div>
-        <div className="text-right mt-5">
-          <button onClick={toggleQuickReads} className="text-link">
-            {showAll
-              ? `Show ${course.experts.length} Less`
-              : `Show ${course.experts.length} More`}
-          </button>
-        </div>
+        {course.experts?.length > 6 && (
+          <div className="text-right mt-5">
+            <button onClick={toggleQuickReads} className="text-link">
+              {showAll
+                ? `Show ${course.experts.length - 6} Less`
+                : `Show ${course.experts.length - 6} More`}
+            </button>
+          </div>
+        )}
       </section>
 
       <section className="px-9 mx-auto py-8">
