@@ -36,6 +36,10 @@
   .tab-buttons-text:hover{
     border-bottom: 2px solid #d75555;
   }
+
+  .time-data{
+    margin-top: 2px;
+  }
   
   @media (max-width: 959px) {
 

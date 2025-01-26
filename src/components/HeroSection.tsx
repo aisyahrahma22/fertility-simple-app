@@ -27,7 +27,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description, actions, 
         </div>
         <div className='lesson-inside-row'>
           <img src={`/duration.svg`} alt="Menu" className="image-icon" />
-          <span>{timeData}</span>
+          <span className='time-data'>{timeData}</span>
         </div>
        </div>
        <h1 className='courses__heading extra-size'>{title}</h1>
