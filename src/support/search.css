@@ -1,4 +1,10 @@
  
+  .container-search{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+  }
+
   .content-search-header {
     background-color: #fff;
     padding-inline: 40px;
@@ -126,6 +132,15 @@
     font-size: 12px;
   }
 
+  @media (max-width: 1290px) {
+    .container-search{
+      height: 960px;
+      align-items: center;
+      justify-content: center;
+      border: transparent;
+    }      
+
+  }
 
   @media (max-width: 768px) {
     .input-field {
@@ -148,5 +163,12 @@
     .content-search__title {
       font-size: 24px;
     }
+
+    .container-search{
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      border: transparent;
+    }      
   }
   

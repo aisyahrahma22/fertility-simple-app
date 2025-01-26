@@ -39,7 +39,7 @@ export default function SearchPage() {
     <div className="bg-white text-gray-900">
       {/* Navbar */}
       <Navbar />
-      <section>
+      <section className="container-search">
       {isSearching ? (
         <div className="content-search">
           <div className="content-search-header2">
