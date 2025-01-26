@@ -1,0 +1,100 @@
+  
+  .syllabus-title{
+    text-transform: none;
+    margin-bottom: 24px;
+    font-family: Feature Deck Web, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .syllabus {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .syllabus-box{
+    border: 1px solid #e6e3d2;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 0px;
+  }
+
+  .syllabus-box:hover,
+  .syllabus-box-active{
+    background-color: #fcfaf5;
+  }
+
+  .syllabus__lesson__number {
+    margin-bottom: 4px;
+    font-family: ABC Whyte, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .syllabus__lesson__name {
+    font-family: Feature Deck Web, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .syllabus__lesson__duration {
+    white-space: nowrap;
+    font-family: ABC Whyte, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .syllabus__lesson {
+    border-top: 1px solid #e6e3d2;
+    /* border-radius: 12px; */
+    padding: 12px 16px;
+  }
+
+  .image-icon-syllabus{
+    width: 22px;
+    height: 22px;
+  }
+
+  .syllabus__lesson:hover{
+    background-color: #f6f1e2;
+  }
+
+  .icon-box-syllabus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 1200px) {
+      
+  
+  
+  }
+
+  @media (max-width: 768px) {
+   
+    .syllabus-title{
+      font-size: 24px;
+    }
+
+    .syllabus__lesson__number {
+      font-size: 12px;
+    }
+
+    .syllabus__lesson__name {
+      font-size: 16px;
+    }
+
+    .syllabus__lesson__duration {
+      font-size: 12px;
+    }
+  }
+  

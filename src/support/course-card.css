@@ -1,0 +1,131 @@
+  .course-cards {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 10px 70px 10px;
+  }
+
+  .course-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfaf5;
+    border-radius: 12px;
+    padding: 36px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .course-card .title {
+    font-family: Feature Display Cond Web, serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: -.02em;
+    line-height: .9;
+    font-size: 54px;
+    padding-bottom: 5px;
+  }
+
+  .course-card__buttons {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr;
+    align-items: end;
+    margin-top: 24px;
+    flex-grow: 1;
+    margin-right: -36px;
+    margin-bottom: -36px;
+  }
+
+  .course-card__button {
+    background-color: #f48265;
+    color: #fcfaf5;
+    position: relative;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -.01em;
+    opacity: 0;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 8px;
+    padding: 0 26px;
+  }
+
+  .course-card__buttons>* {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .course-card__button:hover{
+    opacity: 1;
+  }
+
+  .course-card__button-stand-in {
+    background-color: #f6f1e2;
+    color: #bcaf8a;
+    position: relative;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 8px;
+    padding: 0 26px;
+  }
+  .course-card:hover{
+    box-shadow: 0 4px 12px #00000040;
+  }
+
+  .course-card:hover .course-card__button-stand-in{
+    opacity: 0;
+  }
+
+  .course-card:hover .course-card__button{
+    opacity: 1;
+  }
+
+  .course-card__button-stand-in:hover {
+    opacity: 0;
+    transition: opacity .25s ease;
+  }
+
+  .course-card__button-stand-in, .course-card__button {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  @media (max-width: 1200px) {
+      
+    .course-cards {
+      grid-template-columns: repeat(2, 1fr); 
+      padding: 30px 40px 30px;
+    }
+  
+  
+  }
+
+  @media (max-width: 768px) {
+    .course-cards {
+      grid-template-columns: repeat(1, 1fr); 
+      padding-top: 10px;
+    }
+  
+
+    .course-card .title {
+      font-size: 30px;
+    }
+
+  }
+  
