@@ -15,10 +15,14 @@ const Course = () => {
   const toggleQuickReads = () => setShowAll(!showAll);
 
   const filteredCourses =
-    filter === "All"
-      ? coursesData
-      : coursesData.filter((course) => course.category === filter);
+  filter === "All"
+    ? coursesData
+    : coursesData.filter((course) => course.category === filter);
 
+  const popularCourses = (filter === "All" ? coursesData : filteredCourses)
+    .sort((a, b) => (b.views || 0) - (a.views || 0))
+    .slice(0, 6);
+    
   return (
     <div className="bg-white text-gray-900">
       {/* Navbar */}
@@ -42,13 +46,10 @@ const Course = () => {
       </section>
 
       {/* Popular Lessons Section */}
-      <h4 className="section-title">Popular Lessons (6)</h4>
+      <h4 className="section-title">Popular Lessons ({popularCourses.length})</h4>
       <section>
         <div className="lesson-cards">
-          {coursesData
-            .sort((a, b) => (b.views || 0) - (a.views || 0)) // Sort by most views
-            .slice(0, 6) // Limit to 6
-            .map((course, index) => (
+          {popularCourses.map((course, index) => (
               <div key={index} className="lesson-card">
                 <Link href={`/course-detail/${course.id}`}>
                   <p className="context">{course.title.toUpperCase()}</p>

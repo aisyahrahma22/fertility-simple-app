@@ -36,8 +36,10 @@ export default function SearchPage() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white text-gray-900">
+      {/* Navbar */}
       <Navbar />
+      <section>
       {isSearching ? (
         <div className="content-search">
           <div className="content-search-header2">
@@ -104,7 +106,9 @@ export default function SearchPage() {
           </div>
         </div>
       )}
+      </section>
 
+      {/* Footer */}
       <Footer />
     </div>
   );
