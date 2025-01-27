@@ -135,6 +135,17 @@ const CourseDetailPage = () => {
           ))}
         </div>
       </section>
+      <div className="flex justify-center">
+        <div className="lesson-container__buttons">
+            <a
+              className="bt3 bt3--primary"
+              href="/courses"
+              title="What is IVF?"
+            >
+              Explore All Courses
+            </a>
+          </div>
+      </div>
       <Footer />
     </div>
   );
